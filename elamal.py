@@ -1,4 +1,4 @@
-# ---------------------------------------------------
+#----------------------------------------------
 # Simple ElGamal Digital Signature
 # ---------------------------------------------------
 
@@ -61,6 +61,9 @@ def verify_signature(message, signature, q, a, YA):
     V1 = pow(a, m, q)
     V2 = (pow(YA, S1, q) * pow(S1, S2, q)) % q
 
+    print(f"\nVerification Check:")
+    print(f"V1 : {V1}")
+    print(f"V2 : {V2}")
     return V1 == V2
 
 # -------------------------------
