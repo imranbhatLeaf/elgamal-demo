@@ -71,7 +71,7 @@ def verify_signature(message, signature, q, a, YA):
 # -------------------------------
 if __name__ == "__main__":
     # Small values for easy demonstration
-    q = 10007      # prime
+    q = 43      # prime
     a = 5       # primitive root
 
     print("=== ElGamal Digital Signature Demo ===")
